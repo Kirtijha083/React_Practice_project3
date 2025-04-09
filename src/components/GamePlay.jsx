@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelectors";
+import RoleDice from "./RoleDice";
 
 export default function GamePlay ()  {
 
@@ -10,6 +11,7 @@ export default function GamePlay ()  {
    <TotalScore/>
    <NumberSelector/>
    </div>
+   <RoleDice/>
    </MainContainer>
   );
 };
