@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { useState } from "react";
 
-export default function RoleDice() {
+export default function RoleDice(setCurrentDice, currentDice) {
 
-    const [currentDice, setCurrentDice] = useState(1);
+ 
 
     const generateRandomNumber = (min, max) => {
-        console.log(Math.floor(Math.random() * (max - min) + min));
+        // console.log(Math.floor(Math.random() * (max - min) + min));
         return Math.floor(Math.random() * (max - min) + min);
     };
 

@@ -1,12 +1,11 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-export default function NumberSelector() {
+export default function NumberSelector({
+   selectedNumber, setSelectedNumber  //passes this as a props
+}) {
 
   const arrNumber = [1, 2, 3, 4, 5, 6];
-
-  const [selectedNumber, setSelectedNumber] = useState();
-
 
 
   return (
