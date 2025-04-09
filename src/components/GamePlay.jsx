@@ -5,9 +5,20 @@ import NumberSelector from "./NumberSelectors";
 export default function GamePlay ()  {
 
   return (
-   <main>
+   <MainContainer>
+    <div className="top_section">
    <TotalScore/>
    <NumberSelector/>
-   </main>
+   </div>
+   </MainContainer>
   );
 };
+
+const MainContainer = styled.main`
+ padding-top: 70px;
+  .top_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+`;

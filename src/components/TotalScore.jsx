@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function TotalScore ({ score }){
   return (
     <ScoreContainer>
-      <h1>{score}</h1>
+      <h1>0</h1>
       <p>Total Score</p>
     </ScoreContainer>
   );
