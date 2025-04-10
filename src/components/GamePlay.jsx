@@ -25,6 +25,8 @@ export default function GamePlay() {
       setScore((prev) => prev - 2);
     }
 
+    setSelectedNumber(undefined);
+
   };
 
 
