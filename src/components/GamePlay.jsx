@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function GamePlay() {
 
-  const [score, setScore] = useState();
+  const [score, setScore] = useState(0);
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
 
@@ -31,7 +31,7 @@ export default function GamePlay() {
   return (
     <MainContainer>
       <div className="top_section">
-        <TotalScore />
+        <TotalScore score={score} />
         <NumberSelector selectedNumber={selectedNumber} setSelectedNumber={setSelectedNumber} />
       </div>
       <RoleDice currentDice={currentDice} roleDice={roleDice} />
