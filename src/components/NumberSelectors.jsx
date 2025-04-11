@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default function NumberSelector({
-   selectedNumber, setSelectedNumber  //passes this as a props
+   error,selectedNumber, setSelectedNumber  //passes this as a props
 }) {
 
   const arrNumber = [1, 2, 3, 4, 5, 6];
@@ -9,7 +9,7 @@ export default function NumberSelector({
 
   return (
     <NumberSelectorContainer>
-      {/* <p className="error">{error}</p> */}
+      <p className="error">{error}</p>
       <div className="flex">
         {arrNumber.map((value, i) => (
           <Box
@@ -39,9 +39,11 @@ const NumberSelectorContainer = styled.div`
     font-size: 24px;
     font-weight: 700px;
   }
-  /* .error {
+  .error {
     color: red;
-  } */
+    font-weight:bold;
+    font-size:large;
+  } 
 `;
 
 const Box = styled.div`
