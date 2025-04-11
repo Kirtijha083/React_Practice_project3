@@ -22,7 +22,9 @@ export default function GamePlay() {
       setError("You have not selected any number");
       return;
     } //ye isly taki jb btn selected na ho to dice clcki na ho oe number na bdhe or error msg aaye
-    setError("")   // true hone ke liye error ko unset kr denge..with empty array..........then using error in numberselector 
+
+    // setError("")   // true hone ke liye error ko unset kr denge..with empty array..........then using error in numberselector 
+
     const randomNumber = generateRandomNumber(1, 7);
     setCurrentDice((prev) => randomNumber);
 
@@ -40,7 +42,7 @@ export default function GamePlay() {
     <MainContainer>
       <div className="top_section">
         <TotalScore score={score} />
-        <NumberSelector error={error} selectedNumber={selectedNumber} setSelectedNumber={setSelectedNumber} />
+        <NumberSelector error={error}  setError={setError} selectedNumber={selectedNumber} setSelectedNumber={setSelectedNumber} />
       </div>
       <RoleDice currentDice={currentDice} roleDice={roleDice} />
     </MainContainer>
