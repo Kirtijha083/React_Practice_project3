@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../styled/Button";
 
 export default function StartGame ({toggle})  {
 
@@ -30,25 +31,25 @@ const Container = styled.div`
     }
 `;
 
-const Button = styled.button`
-    color: white;
-    padding: 10px 18px;
+// const Button = styled.button`
+//     color: white;
+//     padding: 10px 18px;
 
-    width: 220px;
+//     width: 220px;
 
-    background: #000000;
-    border-radius: 5px;
+//     background: #000000;
+//     border-radius: 5px;
 
-    border: none;
-    font-size: 16px;
-    border: 1px solid transparent;
-    transition: 0.4s background ease-in;
-    cursor: pointer;
+//     border: none;
+//     font-size: 16px;
+//     border: 1px solid transparent;
+//     transition: 0.4s background ease-in;
+//     cursor: pointer;
 
-    &:hover {  /* here, & is sudo for hover effect on btn*/
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-    transition: 0.3s background ease-in;
-  }
-`;
+//     &:hover {  /* here, & is sudo for hover effect on btn*/
+//     background-color: white;
+//     border: 1px solid black;
+//     color: black;
+//     transition: 0.3s background ease-in;
+//   }
+// `; //.................writing this style code on button.js file in styled folder

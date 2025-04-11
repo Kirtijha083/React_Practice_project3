@@ -3,6 +3,9 @@ import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelectors";
 import RoleDice from "./RoleDice";
 import { useState } from "react";
+// import { Button } from "../styled/Button";
+import { Button, OutlineButton } from "../styled/Button";
+
 
 export default function GamePlay() {
 
@@ -38,13 +41,25 @@ export default function GamePlay() {
   };
 
 
+  const resetScore = () => {
+    setScore(0);
+  };
+
+
+
   return (
     <MainContainer>
       <div className="top_section">
         <TotalScore score={score} />
-        <NumberSelector error={error}  setError={setError} selectedNumber={selectedNumber} setSelectedNumber={setSelectedNumber} />
+        <NumberSelector error={error} setError={setError} selectedNumber={selectedNumber} setSelectedNumber={setSelectedNumber} />
       </div>
       <RoleDice currentDice={currentDice} roleDice={roleDice} />
+
+      <div className="btns">
+        <OutlineButton onClick={resetScore}>Reset Score</OutlineButton>
+        <Button>Show Rules</Button>
+      </div>
+
     </MainContainer>
   );
 };
@@ -56,4 +71,14 @@ const MainContainer = styled.main`
     justify-content: space-around;
     align-items: end;
 }
+
+.btns {
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 `;

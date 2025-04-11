@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default function NumberSelector({
-  setError,  error,selectedNumber, setSelectedNumber  //passes this as a props
+  setError, error, selectedNumber, setSelectedNumber  //passes this as a props
 }) {
 
   const arrNumber = [1, 2, 3, 4, 5, 6];
@@ -22,7 +22,7 @@ export default function NumberSelector({
           <Box
             isSelected={value === selectedNumber}
             key={i}  // map function ka jb v use krte to ek key value dena hota h (unique value dena pdta h taki usko access krne me esay ho)
-            onClick={() => numberSelectorHandler(value)}    //jb v function(onClick) me value(value) pass krna hota h to usko call back me pass krna hota h nhi to error aata h
+            onClick={() => numberSelectorHandler(value)}  //jb v function(onClick) me value(value) pass krna hota h to usko call back me pass krna hota h nhi to error aata h  
           >
             {value}
           </Box>
