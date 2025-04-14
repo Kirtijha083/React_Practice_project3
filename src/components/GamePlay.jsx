@@ -5,6 +5,7 @@ import RoleDice from "./RoleDice";
 import { useState } from "react";
 // import { Button } from "../styled/Button";
 import { Button, OutlineButton } from "../styled/Button";
+import Rules from "./Rules";
 
 
 export default function GamePlay() {
@@ -59,7 +60,7 @@ export default function GamePlay() {
         <OutlineButton onClick={resetScore}>Reset Score</OutlineButton>
         <Button>Show Rules</Button>
       </div>
-
+<Rules/>
     </MainContainer>
   );
 };
