@@ -64,13 +64,13 @@ export default function GamePlay() {
           {showRules ? "Hide" : "Show"} Rules
         </Button>
       </div>
-      <Rules />
+      {showRules && <Rules />}
     </MainContainer>
   );
 };
 
 const MainContainer = styled.main`
- padding-top: 70px;
+ padding-top: 5px;
   .top_section {
     display: flex;
     justify-content: space-around;
@@ -78,12 +78,12 @@ const MainContainer = styled.main`
 }
 
 .btns {
-    margin-top: 20px;
+    margin-top: 10px;
     gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    /* gap: 10px; */
   }
 `;

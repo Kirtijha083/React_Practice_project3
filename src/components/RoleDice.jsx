@@ -28,7 +28,7 @@ export default function RoleDice({
 };
 
 const DiceContainer = styled.div`
-  margin-top: 48px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
